@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website – Saurav</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <h1 class="logo">Saurav<span>Web</span></h1>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle" class="theme-btn" type="button">
+                    🌙 Dark
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="home" class="section hero">
+            <div class="container hero-layout">
+                <div>
+                    <p class="badge">Final Project · Website Development</p>
+                    <h2>Hello, I’m <span class="highlight">Saurav</span></h2>
+                    <p class="hero-text">
+                        This website is my final project for my Website Development class.
+                        I built it using HTML, CSS, and a little bit of JavaScript.
+                        It shows who I am, what I’m learning, and where I want to go next.
+                    </p>
+                    <a href="#projects" class="btn">View My Projects</a>
+                </div>
+
+                <div class="hero-card">
+                    <h3>Quick Info</h3>
+                    <ul>
+                        <li>🎓 Computer Science student</li>
+                        <li>💻 Interested in web development</li>
+                        <li>🌎 International student in the US</li>
+                        <li>✨ Always learning something new</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-text">
+                    My name is <strong>Saurav</strong>, and I am a student learning how to
+                    design and build websites. This project helped me understand how HTML
+                    structures a page, how CSS controls layout and design, and how
+                    JavaScript can add interactivity to a website.
+                </p>
+
+                <p class="section-text">
+                    Outside of coding, I enjoy travelling, learning about different cultures,
+                    and working towards my long-term goals in tech and beyond.
+                </p>
+
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>Skills I’m Practising</h3>
+                        <ul class="list">
+                            <li>Creating responsive layouts with HTML &amp; CSS</li>
+                            <li>Using GitHub and GitHub Pages for hosting</li>
+                            <li>Writing clean and readable code</li>
+                            <li>Organising a project with commits and versions</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Goals</h3>
+                        <ul class="list">
+                            <li>Build more personal web projects</li>
+                            <li>Improve my JavaScript skills</li>
+                            <li>Learn backend development later</li>
+                            <li>Use web development in my future career</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Sample Projects</h2>
+                <p class="section-text">
+                    Below are simple project ideas that represent the kind of work I can
+                    create as I keep learning web development.
+                </p>
+
+                <div class="grid-3">
+                    <article class="card project-card">
+                        <h3>Study Planner Page</h3>
+                        <p>A webpage layout for planning weekly study tasks using tables, lists, and colours.</p>
+                        <p class="tag">HTML · CSS</p>
+                    </article>
+
+                    <article class="card project-card">
+                        <h3>Travel Wishlist</h3>
+                        <p>A page listing countries and cities I want to visit, with images and descriptions.</p>
+                        <p class="tag">Layout · Images</p>
+                    </article>
+
+                    <article class="card project-card">
+                        <h3>Personal Portfolio</h3>
+                        <p>A homepage that shares my story, skills, and contact info.</p>
+                        <p class="tag">Responsive Design</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-text">
+                    This is a sample contact form to demonstrate structure and validation.
+                </p>
+
+                <form id="contact-form" class="form">
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" required />
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required />
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                    <p id="form-status" class="form-status"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-layout">
+            <p>&copy; <span id="year"></span> Saurav. All rights reserved.</p>
+            <a href="#home" class="back-to-top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
